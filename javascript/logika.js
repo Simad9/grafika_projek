@@ -6,7 +6,7 @@ const ctx = canvas.getContext("2d");
 // Ambil yang diklik
 const nomor = document.getElementById("nomor");
 const gambar = document.querySelector("img");
-const pathGambar = "ss/";
+const pathGambar = "../ss/";
 
 nomor.addEventListener("click", function (e) {
   let ganti = 1;

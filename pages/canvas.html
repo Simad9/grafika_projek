@@ -7,9 +7,10 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style>
       body {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         /* background: linear-gradient(135deg, #667eea, #764ba2); */
-        background: url('https://images.unsplash.com/photo-1638184984605-af1f05249a56?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+        background: url("https://images.unsplash.com/photo-1638184984605-af1f05249a56?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+          no-repeat center center/cover;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -108,13 +109,18 @@
       </div>
       <div class="content">
         <h1>2D OBJECT</h1>
-        <canvas id="canvas" width="500" height="500" style="background-color: white;"></canvas>
+        <canvas
+          id="canvas"
+          width="500"
+          height="500"
+          style="background-color: white"
+        ></canvas>
         <div class="source-code">
           <h1>Source Code</h1>
           <img src="ss/code.png" id="gambar" />
         </div>
       </div>
     </div>
-    <script src="javascript/logika.js"></script>
+    <script src="../javascript/logika.js"></script>
   </body>
 </html>
