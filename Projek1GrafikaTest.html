@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gambar Objek di Canvas</title>
+  </head>
+  <body>
+    <canvas
+      id="canvas"
+      width="550"
+      height="550"
+      style="border: 1px solid #000"
+    ></canvas>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      // Objek Segitiga Merah
+      ctx.fillStyle = "red";
+      ctx.beginPath();
+      ctx.moveTo(80, 10);
+      ctx.lineTo(20, 140);
+      ctx.lineTo(150, 140);
+      ctx.closePath();
+      ctx.fill();
+
+      // Objek Trapesium Biru
+      ctx.fillStyle = "blue";
+      ctx.beginPath();
+      ctx.moveTo(170, 140);
+      ctx.lineTo(195, 100);
+      ctx.lineTo(290, 100);
+      ctx.lineTo(315, 140);
+      ctx.closePath();
+      ctx.fill();
+
+      // Objek Lingkaran Hijau
+      ctx.fillStyle = "rgb(49, 226, 22)";
+      ctx.beginPath();
+      ctx.arc(380, 90, 50, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Gambar Logo UPN Kuning
+      const logo = new Image();
+      logo.src = "https://www.upnyk.ac.id/public/assets/pages/image-83700542138469295167.png";
+      logo.onload = function () {
+        ctx.drawImage(logo, 30, 200, 100, 100);
+      };
+
+      // Objek Jam Pasir Segitiga Merah
+      ctx.fillStyle = "red";
+      ctx.beginPath();
+      ctx.moveTo(160, 210);
+      ctx.lineTo(270, 210);
+      ctx.lineTo(214, 270);
+      ctx.closePath();
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.moveTo(270, 330);
+      ctx.lineTo(160, 330);
+      ctx.lineTo(214, 270);
+      ctx.closePath();
+      ctx.fill();
+
+      // Objek Hexagon
+      ctx.fillStyle = "rgb(44, 30, 135)";
+      ctx.beginPath();
+      ctx.moveTo(320, 240);
+      ctx.lineTo(400, 200);
+      ctx.lineTo(457, 250);
+      ctx.lineTo(438, 300);
+      ctx.lineTo(371, 330);
+      ctx.lineTo(371, 330);
+      ctx.lineTo(320, 300);
+      ctx.closePath();
+      ctx.fill();
+
+      // Objek 3 trapesium yang bertumpukan
+      ctx.fillStyle = "rgb(61, 74, 34)";
+      ctx.beginPath();
+      ctx.moveTo(80, 370);
+      ctx.lineTo(180, 360);
+      ctx.lineTo(160, 400);
+      ctx.lineTo(100, 410);
+      ctx.closePath();
+      ctx.fill();
+
+      ctx.fillStyle = "rgb(61, 74, 34)";
+      ctx.beginPath();
+      ctx.moveTo(100, 412);
+      ctx.lineTo(160, 402);
+      ctx.lineTo(154, 450);
+      ctx.lineTo(96, 440);
+      ctx.closePath();
+      ctx.fill();
+
+      ctx.fillStyle = "rgb(61, 74, 34)";
+      ctx.beginPath();
+      ctx.moveTo(96, 442);
+      ctx.lineTo(154, 452);
+      ctx.lineTo(182, 485);
+      ctx.lineTo(120, 493);
+      ctx.closePath();
+      ctx.fill();
+    </script>
+  </body>
+</html>

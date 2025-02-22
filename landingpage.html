@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok 6 - Projek Grafika 2 Dimensi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('https://images.unsplash.com/photo-1638184984605-af1f05249a56?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 20px;
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 1.5s forwards;
+        }
+
+        h1 {
+            font-size: 7em;
+            margin-bottom: 10px;
+            animation: slideIn 1s ease-in-out;
+            color: rgb(202, 202, 73);
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            animation: slideIn 1.2s ease-in-out;
+            font-family: Poppins;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #7c2783;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+            animation: slideIn 1.4s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #c95ad1;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>KELOMPOK 505</h1>
+        <p>Projek Grafika 2 Dimensi</p>
+        <a href="introduction.html" class="btn" style="font-weight: bold;">OUR PROJECT</a>
+    </div>
+</body>
+
+</html>

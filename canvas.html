@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gambar Objek di Canvas</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        /* background: linear-gradient(135deg, #667eea, #764ba2); */
+        background: url('https://images.unsplash.com/photo-1638184984605-af1f05249a56?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        color: white;
+      }
+      .container {
+        display: flex;
+        width: 80%;
+        height: 90vh;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+      .menu {
+        width: 30%;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.3);
+        color: white;
+      }
+      .menu h2 {
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .menu ul {
+        list-style: none;
+        padding: 0;
+      }
+      .menu li {
+        padding: 12px;
+        margin: 18px 0;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 8px;
+        text-align: center;
+        transition: 0.9s;
+        font-weight: bold;
+      }
+      .menu li:hover {
+        background: rgba(255, 255, 255, 0.5);
+      }
+      .content {
+        width: 70%;
+        padding: 20px;
+        text-align: center;
+        overflow-y: auto;
+        height: 100%;
+      }
+      .content h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: rgb(240, 240, 198);
+      }
+      canvas {
+        border: 2px solid white;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      .source-code {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .source-code h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .source-code img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <h2>OBJECT</h2>
+        <ul id="nomor">
+          <li value="1">Segitiga Merah</li>
+          <li value="2">Trapesium Biru</li>
+          <li value="3">Logo UPN</li>
+          <li value="4">Lingkaran Hijau</li>
+          <li value="5">Objek 5</li>
+          <li value="6">Objek 6</li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1>2D OBJECT</h1>
+        <canvas id="canvas" width="500" height="500" style="background-color: white;"></canvas>
+        <div class="source-code">
+          <h1>Source Code</h1>
+          <img src="ss/code.png" id="gambar" />
+        </div>
+      </div>
+    </div>
+    <script src="javascript/logika.js"></script>
+  </body>
+</html>

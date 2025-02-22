@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anggota Kelompok 6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #000000, #353535);
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s;
+            color: rgb(240, 240, 198);
+
+        }
+
+        p {
+            font-size: 19px;
+            font-weight: bold;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 230px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease-out, opacity 0.5s;
+            opacity: 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #7c2783;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #c95ad1;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .card:nth-child(1),
+        .card:nth-child(2),
+        .card:nth-child(3) {
+            animation: fadeInLeft 2s ease-out forwards;
+        }
+
+        .card:nth-child(4),
+        .card:nth-child(5) {
+            animation: fadeInRight 2s ease-out forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ANGGOTA KELOMPOK 505</h1>
+    <div class="container">
+        <div class="card">
+            <img src="ageng.jpg" alt="Anggota 1">
+            <p>Ageng Sandar Rizki</p>
+            <p>123220011</p>
+        </div>
+        <div class="card">
+            <img src="wijdan.jpg" alt="Anggota 2">
+            <p>Wijdan Akhmad Subarkat</p>
+            <p>123220010</p>
+        </div>
+        <div class="card">
+            <img src="may.jpg" alt="Anggota 3">
+            <p>Jagad Damai</p>
+            <p>123220017</p>
+        </div>
+        <div class="card">
+            <img src="fahmi.jpg" alt="Anggota 4">
+            <p>Fahmi Kariem</p>
+            <p>123220028</p>
+        </div>
+        <div class="card">
+            <img src="wahyu.jpg" alt="Anggota 5">
+            <p>Wahyu Febriansyah</p>
+            <p>123220033</p>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="canvas.html" class="btn" style="font-weight: bold;">NEXT</a>
+    </div>
+</body>
+
+</html>
